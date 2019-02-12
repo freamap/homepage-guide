@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-typescript",
+  "version": "1.0.0",
+  "description": "My glorious Nuxt.js project",
+  "author": "KyoheiNakafuji",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint": "tslint --project"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "cross-env": "^5.2.0",
+    "nuxt-buefy": "^0.3.2",
+    "nuxt-ts": "^2.4.3",
+    "vue-property-decorator": "^7.3.0"
+  },
+  "devDependencies": {
+    "tslint-config-standard": "^8.0.1"
+  }
+}
