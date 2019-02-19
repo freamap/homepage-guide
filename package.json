@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "@types/webpack": "^4.4.24",
     "cross-env": "^5.2.0",
     "nuxt-buefy": "^0.3.2",
     "nuxt-ts": "^2.4.3",

@@ -12,6 +12,7 @@
     "allowJs": true,
     "types": [
       "@types/node",
+      "@types/webpack",
       "@nuxt/vue-app"
     ]
   }
