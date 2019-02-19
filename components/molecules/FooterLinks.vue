@@ -1,6 +1,6 @@
 <template>
   <div>
-    グローバルナビ
+    フッターリンク
   </div>
 </template>
 
@@ -8,5 +8,5 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class GlobalNavi extends Vue {}
+export default class FooterLinks extends Vue {}
 </script>

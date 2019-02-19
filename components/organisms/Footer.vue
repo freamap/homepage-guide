@@ -1,7 +1,6 @@
 <template>
   <div>
-    ヘッダー
-    <GlobalNavi />
+    フッター
   </div>
 </template>
 
@@ -14,5 +13,5 @@ import GlobalNavi from '~/components/molecules/GlobalNavi.vue'
     GlobalNavi
   }
 })
-export default class Header extends Vue {}
+export default class Footer extends Vue {}
 </script>
