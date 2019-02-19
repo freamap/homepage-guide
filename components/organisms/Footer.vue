@@ -1,7 +1,5 @@
-<template>
-  <div>
-    フッター
-  </div>
+<template lang="pug">
+  div フッター
 </template>
 
 <script lang="ts">

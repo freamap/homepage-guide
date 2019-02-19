@@ -1,7 +1,5 @@
-<template>
-  <div>
-    フッターリンク
-  </div>
+<template lang="pug">
+  div フッターリンク
 </template>
 
 <script lang="ts">

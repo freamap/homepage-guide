@@ -1,8 +1,7 @@
-<template>
-  <div>
-    ヘッダー
-    <GlobalNavi />
-  </div>
+<template lang="pug">
+  div.header
+    | ヘッダー
+    GlobalNavi
 </template>
 
 <script lang="ts">
@@ -16,3 +15,9 @@ import GlobalNavi from '~/components/molecules/GlobalNavi.vue'
 })
 export default class Header extends Vue {}
 </script>
+
+<style scoped lang="scss">
+.header {
+  background-color: red;
+}
+</style>

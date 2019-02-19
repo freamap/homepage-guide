@@ -1,7 +1,5 @@
-<template>
-  <div>
-    グローバルナビ
-  </div>
+<template lang="pug">
+  div グローバルナビ
 </template>
 
 <script lang="ts">
