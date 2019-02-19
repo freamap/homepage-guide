@@ -1,7 +1,9 @@
+import { Configuration } from 'webpack'
+import { Context } from '@nuxt/vue-app'
+
 const pkg = require('./package')
 
-
-module.exports = {
+export default {
   mode: 'universal',
 
   /*
@@ -59,8 +61,10 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-      
+    extend (config: Configuration, { isClient }: Context) {
+      if (isClient) {
+        config.devtool = 'source-map'
+      }
     }
   }
 }
