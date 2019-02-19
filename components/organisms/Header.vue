@@ -1,17 +1,17 @@
 <template>
   <div>
-    <Header />
-    <nuxt />
+    ヘッダー
+    <GlobalNavi />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Header from '~/components/organisms/Header.vue'
+import GlobalNavi from '~/components/molecules/GlobalNavi.vue'
 
 @Component({
   components: {
-    Header
+    GlobalNavi
   }
 })
 export default class Home extends Vue {}

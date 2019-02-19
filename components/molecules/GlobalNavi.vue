@@ -1,18 +1,12 @@
 <template>
   <div>
-    <Header />
-    <nuxt />
+    グローバルナビ
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Header from '~/components/organisms/Header.vue'
 
-@Component({
-  components: {
-    Header
-  }
-})
+@Component
 export default class Home extends Vue {}
 </script>
