@@ -7,7 +7,7 @@ import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class FooterLinks extends Vue {
-  pages!: {
+  pages = {
     company: {
       link: '/company',
       title: '運営会社'
