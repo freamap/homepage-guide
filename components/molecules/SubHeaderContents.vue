@@ -1,12 +1,17 @@
 <template lang="pug">
   div
-    nuxt-link(to="/") top
-    nuxt-link(to="/html5") HTML5
+    HeadLine1
+      slot(name="title")
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import HeadLine1 from '~/components/atoms/HeadLine1.vue'
 
-@Component
+@Component({
+  components: {
+    HeadLine1
+  }
+})
 export default class GlobalNavi extends Vue {}
 </script>

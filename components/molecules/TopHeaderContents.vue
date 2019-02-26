@@ -1,7 +1,5 @@
 <template lang="pug">
-  div
-    nuxt-link(to="/") top
-    nuxt-link(to="/html5") HTML5
+  div トップページヘッダーコンテンツ
 </template>
 
 <script lang="ts">

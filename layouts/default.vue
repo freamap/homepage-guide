@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <TopHeader />
     <nuxt />
     <Footer />
   </div>
@@ -8,14 +8,14 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Header from '~/components/organisms/Header.vue'
+import TopHeader from '~/components/organisms/TopHeader.vue'
 import Footer from '~/components/organisms/Footer.vue'
 
 @Component({
   components: {
-    Header,
+    TopHeader,
     Footer
   }
 })
-export default class Home extends Vue {}
+export default class Default extends Vue {}
 </script>
