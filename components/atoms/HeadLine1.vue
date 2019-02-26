@@ -1,8 +1,9 @@
 <template lang="pug">
-  div.headline
+  div.headline1
     div
       img(src="~/assets/images/title-mark.svg")
-    slot
+    div
+      slot
     div
       img(src="~/assets/images/title-mark.svg")
 </template>
@@ -10,10 +11,10 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class HeadLine extends Vue {}
+export default class HeadLine1 extends Vue {}
 </script>
 <style lang="scss" scoped>
-.headline {
+.headline1 {
   display: flex;
   justify-content: center;
 }
