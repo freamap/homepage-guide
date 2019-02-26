@@ -2,7 +2,7 @@
   div
     Content
       template(slot="title")
-        | 説明
+        h2 説明
       template(slot="body")
         | HTML5とはHTML5とはHTML5とはHTML5とはHTML5とは
       
@@ -19,3 +19,7 @@ import Content from '~/components/molecules/Content.vue'
 })
 export default class Html5Contents extends Vue {}
 </script>
+
+<style lang="scss" scoped>
+
+</style>

@@ -15,13 +15,21 @@ export default class HeadLine2 extends Vue {}
   justify-content: center;
 
   > div {
-    &:after {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &::after {
+      display: block;
       content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-bottom: 1px solid #333;
+      margin-top: 12px;
+      width: 56px;
+      border-bottom: 6px solid #236AF7;
+    }
+
+    > * {
+      font-size: 4rem;
+      font-weight: bold;
     }
   }
 }
