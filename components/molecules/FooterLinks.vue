@@ -1,5 +1,10 @@
 <template lang="pug">
-  div フッターリンク
+  div.footer-links
+    div(
+      v-for="(value, key) in pages"
+      :key="key"
+    )
+      | {{ value.title }}
 </template>
 
 <script lang="ts">
@@ -19,3 +24,15 @@ export default class FooterLinks extends Vue {
   }
 }
 </script>
+
+<style scoped lang="scss">
+.footer-links {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  > div {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+</style>

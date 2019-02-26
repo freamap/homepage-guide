@@ -29,17 +29,16 @@ export default class Footer extends Vue {}
   justify-content: center;
   color: #236AF7;
   background-color: #FFFFFF;
-  height: 107px;
-  margin-top: 23px;
-  margin-bottom: 30px;
+  padding-top: 23px;
+  padding-bottom: 30px;
 }
 
 .contents {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .copyright {
@@ -49,6 +48,6 @@ export default class Footer extends Vue {}
 }
 
 .logo {
-  width: 56px;
+  width: 54px;
 }
 </style>
