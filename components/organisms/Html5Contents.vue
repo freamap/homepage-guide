@@ -4,7 +4,8 @@
       template(slot="title")
         h2 説明
       template(slot="body")
-        | HTML5とはHTML5とはHTML5とはHTML5とはHTML5とは
+        p
+          | HTML5とはHTML5とはHTML5とはHTML5とはHTML5とは
       
 </template>
 
