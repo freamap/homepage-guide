@@ -1,17 +1,16 @@
 <template lang="pug">
-  div
-    HelloWorld
+  Html5Contents
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import { State } from 'vuex-class'
 import { PageState } from '../../store/page/types'
-import HelloWorld from '~/components/HelloWorld.vue'
+import Html5Contents from '~/components/organisms/Html5Contents.vue'
 const namespace: string = 'page'
 
 @Component({
   components: {
-    HelloWorld
+    Html5Contents
   },
   layout: 'sub',
   async fetch ({ store }) {
