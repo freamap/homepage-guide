@@ -30,7 +30,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/css/main.css'
+    { src: '~/assets/scss/common.scss', lang: 'scss' }
   ],
 
   /*
