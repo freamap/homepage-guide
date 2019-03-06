@@ -62,8 +62,8 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config: Configuration, { isClient }: Context) {
-      if (isClient) {
+    extend (config: Configuration, { isClient, isDev }: Context) {
+      if (isClient && isDev) {
         config.devtool = 'source-map'
       }
     }
