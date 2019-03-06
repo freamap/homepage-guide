@@ -44,9 +44,7 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy'
+    '@nuxtjs/axios'
   ],
   /*
   ** Axios module configuration
