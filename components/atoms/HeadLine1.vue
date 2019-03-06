@@ -1,10 +1,10 @@
 <template lang="pug">
   div.headline1
-    div
+    div.mark
       img(src="~/assets/images/title-mark.svg")
-    div
+    div.headline
       slot
-    div
+    div.mark
       img(src="~/assets/images/title-mark.svg")
 </template>
 <script lang="ts">
@@ -17,5 +17,21 @@ export default class HeadLine1 extends Vue {}
 .headline1 {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  > .headline {
+    font-size: 4.8rem;
+    font-weight: bold;
+    padding: 0 
+  }
+
+  > .mark {
+    margin: 0 40px;
+
+    > img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
 }
 </style>

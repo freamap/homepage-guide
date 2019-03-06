@@ -30,6 +30,7 @@ export default class HeadLine2 extends Vue {}
     > * {
       font-size: 4rem;
       font-weight: bold;
+      margin: 0;
     }
   }
 }
