@@ -1,9 +1,9 @@
 <template lang="pug">
-  div.description.container
+  div.html-reference.container
     HeadLine2
-      slot(name="title")
+      | HTMLを学ぶ
     div.body
-      slot(name="body")
+      | bbbbbbbbb
     Advertisement
 </template>
 
@@ -18,10 +18,10 @@ import Advertisement from '~/components/molecules/Advertisement.vue'
     Advertisement
   }
 })
-export default class Description extends Vue {}
+export default class HtmlLearning extends Vue {}
 </script>
 <style lang="scss" scoped>
-.description {
+.html-reference {
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -29,6 +29,7 @@ export default class Description extends Vue {}
     margin-top: 48px;
     display: flex;
     justify-content: center;
+
   }
 }
 </style>
