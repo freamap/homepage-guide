@@ -4,18 +4,18 @@
       slot(name="title")
     div.body
       slot(name="body")
-    div.advertisement
-      div 広告
-      div.advertisement-body
+    Advertisement
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import HeadLine2 from '~/components/atoms/HeadLine2.vue'
+import Advertisement from '~/components/molecules/Advertisement.vue'
 
 @Component({
   components: {
-    HeadLine2
+    HeadLine2,
+    Advertisement
   }
 })
 export default class Content extends Vue {}
@@ -26,15 +26,8 @@ export default class Content extends Vue {}
 
   .body {
     margin-top: 48px;
-  }
-
-  .advertisement {
-
-    >.advertisement-body {
-      width: 728px;
-      height: 90px;
-      border: 1px solid #000000;
-    }
+    display: flex;
+    justify-content: center;
   }
 }
 </style>
