@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.content
+  div.description
     HeadLine2
       slot(name="title")
     div.body
@@ -18,10 +18,10 @@ import Advertisement from '~/components/molecules/Advertisement.vue'
     Advertisement
   }
 })
-export default class Content extends Vue {}
+export default class Description extends Vue {}
 </script>
 <style lang="scss" scoped>
-.content {
+.description {
   padding: 80px 0;
 
   .body {

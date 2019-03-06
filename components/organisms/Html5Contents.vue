@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    Content
+    Description
       template(slot="title")
         | 説明
       template(slot="body")
@@ -11,11 +11,11 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Content from '~/components/molecules/Content.vue'
+import Description from '~/components/molecules/Description.vue'
 
 @Component({
   components: {
-    Content
+    Description
   }
 })
 export default class Html5Contents extends Vue {}
