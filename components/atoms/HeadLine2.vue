@@ -1,7 +1,8 @@
 <template lang="pug">
   div.headline2
     div
-      slot
+      h2
+        slot
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
@@ -23,12 +24,12 @@ export default class HeadLine2 extends Vue {}
       display: block;
       content: "";
       margin-top: 12px;
-      width: 56px;
+      width: 36px;
       border-bottom: 6px solid #236AF7;
     }
 
-    > * {
-      font-size: 4rem;
+    > h2 {
+      font-size: 3rem;
       font-weight: bold;
       margin: 0;
     }

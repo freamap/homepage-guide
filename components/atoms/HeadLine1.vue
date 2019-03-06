@@ -2,7 +2,7 @@
   div.headline1
     div.mark
       img(src="~/assets/images/title-mark.svg")
-    div.headline
+    h1
       slot
     div.mark
       img(src="~/assets/images/title-mark.svg")
@@ -19,14 +19,15 @@ export default class HeadLine1 extends Vue {}
   justify-content: center;
   align-items: center;
 
-  > .headline {
-    font-size: 4.8rem;
+  > h1 {
+    font-size: 3.6rem;
     font-weight: bold;
     padding: 0 
   }
 
   > .mark {
     margin: 0 40px;
+    width: 54px;
 
     > img {
       width: 100%;
