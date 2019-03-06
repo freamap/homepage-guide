@@ -1,15 +1,17 @@
 <template lang="pug">
   div.header
     CommonHeader
-    SubHeaderContents
+    SubHeaderContents(:topicPath="page.topicPath")
       template(slot="title")
-        slot(name="title")
+        | {{ page.title }}
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import CommonHeader from '~/components/molecules/CommonHeader.vue'
 import SubHeaderContents from '~/components/molecules/SubHeaderContents.vue'
+import { State } from 'vuex-class'
+import { PageState } from '../../store/page/types'
 
 @Component({
   components: {
@@ -17,7 +19,9 @@ import SubHeaderContents from '~/components/molecules/SubHeaderContents.vue'
     SubHeaderContents
   }
 })
-export default class SubHeader extends Vue {}
+export default class SubHeader extends Vue {
+  @State('page') page!: PageState
+}
 </script>
 
 <style scoped lang="scss">

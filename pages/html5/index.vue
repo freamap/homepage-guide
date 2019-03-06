@@ -16,7 +16,10 @@ const namespace: string = 'page'
   async fetch ({ store }) {
     await store.dispatch(namespace + '/fetchData',{
       title: 'HTML5',
-      topicPath: []
+      topicPath: [
+        { title: 'TOP', path: '/' },
+        { title: 'HTML5', path: '/html5' }
+      ]
     })
   }
 })
