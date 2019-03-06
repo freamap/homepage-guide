@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.common-header
+  div.common-header.container
     div LOGO
     GlobalNavi
 </template>

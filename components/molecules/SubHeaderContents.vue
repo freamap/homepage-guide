@@ -1,9 +1,10 @@
 <template lang="pug">
-  div.sub-header-contents
-    HeadLine1
-      slot(name="title")
-    div.topic-path
-      TopicPath(:topicPath="topicPath")
+  div.sub-header-contents.container
+    div
+      HeadLine1
+        slot(name="title")
+      div.topic-path
+        TopicPath(:topicPath="topicPath")
 </template>
 
 <script lang="ts">
@@ -25,13 +26,16 @@ export default class SubHeaderContents extends Vue {
 
 <style lang="scss" scoped>
 .sub-header-contents {
-  padding: 80px 0;
-  position: relative;
+  > div {
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
 
-  > .topic-path {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    > .topic-path {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 </style>
