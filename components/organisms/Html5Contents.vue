@@ -2,7 +2,7 @@
   div
     Content
       template(slot="title")
-        h2 説明
+        | 説明
       template(slot="body")
         p
           | HTML5とはHTML5とはHTML5とはHTML5とはHTML5とは

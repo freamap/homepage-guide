@@ -1,7 +1,7 @@
 <template lang="pug">
   div.topic-path
     div(v-for="(topic, index) in topicPath")
-      div(v-if="index !== 0")
+      div.path(v-if="index !== 0")
         | {{ '>' }}
       div
         | {{ topic.title }}
@@ -20,9 +20,14 @@ export default class TopicPath extends Vue {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $primary;
 
   > div {
     display: flex;
+
+    > .path {
+      padding: 0 16px;
+    }
   }
 }
 </style>
