@@ -26,7 +26,7 @@ export default class GlobalNavi extends Vue {
 
     Object.keys(this.page.pages).forEach(key => {
       const globalNaviOrder = this.page.pages[key].globalNaviOrder
-      if (globalNaviOrder !== null) {
+      if (globalNaviOrder !== undefined) {
         const globalLink = { ...this.page.pages[key], current: false }
 
         if (key === this.page.currentGlobalPage) {

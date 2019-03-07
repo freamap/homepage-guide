@@ -2,16 +2,17 @@
   div.sub-header-contents.container
     div
       HeadLine1
-        slot(name="title")
+        | {{ page.title }}
       div.topic-path
-        TopicPath(:topicPath="topicPath")
+        TopicPath(:page="page")
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 import HeadLine1 from '~/components/atoms/HeadLine1.vue'
 import TopicPath from '~/components/atoms/TopicPath.vue'
 import { PageState } from '../../store/page/types'
+import { State } from 'vuex-class'
 
 @Component({
   components: {
@@ -20,7 +21,7 @@ import { PageState } from '../../store/page/types'
   }
 })
 export default class SubHeaderContents extends Vue {
-  @Prop() topicPath!: PageState['topicPath']
+  @State('page') page!: PageState
 }
 </script>
 
