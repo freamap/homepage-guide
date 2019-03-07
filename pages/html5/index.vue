@@ -3,8 +3,6 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { State } from 'vuex-class'
-import { PageState } from '../../store/page/types'
 import Html5Contents from '~/components/organisms/Html5Contents.vue'
 const namespace: string = 'page'
 
@@ -16,14 +14,10 @@ const namespace: string = 'page'
   async fetch ({ store }) {
     await store.dispatch(namespace + '/fetchData',{
       title: 'HTML5',
-      topicPath: [
-        { title: 'TOP', path: '/' },
-        { title: 'HTML5', path: '/html5' }
-      ]
+      topicPath: ['top', 'html5']
     })
   }
 })
 export default class HTML5 extends Vue {
-  @State('page') page!: PageState
 }
 </script>

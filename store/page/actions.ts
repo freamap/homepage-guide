@@ -3,7 +3,13 @@ import { PageState } from './types'
 import { RootState } from '~/store/types'
 
 export default {
-  fetchData ({ commit }: ActionContext<PageState, RootState>, state: PageState): any {
-    commit('setPage', state)
+  fetchData (
+    { commit, state }: ActionContext<PageState, RootState>,
+    page: {title: string; topicPath: Array<string>}
+  ): any {
+    const topicPath = page.topicPath.map((topic) => {
+      return state.pages[topic]
+    })
+    commit('setPage', { title: page.title, topicPath: topicPath })
   }
 }
