@@ -1,10 +1,12 @@
 <template lang="pug">
-  div.description.container
-    HeadLine2
-      slot(name="title")
-    div.body
-      slot(name="body")
-    Advertisement
+  section.section.description
+    div.container
+      header
+        HeadLine2
+          slot(name="title")
+      div.body
+        slot(name="body")
+      Advertisement
 </template>
 
 <script lang="ts">
@@ -22,9 +24,6 @@ export default class Description extends Vue {}
 </script>
 <style lang="scss" scoped>
 .description {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
   .body {
     margin-top: 48px;
     display: flex;

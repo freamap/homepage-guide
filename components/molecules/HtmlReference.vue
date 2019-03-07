@@ -1,10 +1,12 @@
 <template lang="pug">
-  div.html-reference.container
-    HeadLine2
-      | リファレンス
-    div.body
-      | aaaaaaaaaaa
-    Advertisement
+  section.section.html-reference
+    div.container
+      header
+        HeadLine2
+          | リファレンス
+      div.body
+        | aaaaaaaaaaa
+      Advertisement
 </template>
 
 <script lang="ts">
@@ -22,9 +24,6 @@ export default class HtmlReference extends Vue {}
 </script>
 <style lang="scss" scoped>
 .html-reference {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
   .body {
     margin-top: 48px;
     display: flex;
