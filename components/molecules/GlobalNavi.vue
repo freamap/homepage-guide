@@ -57,7 +57,6 @@ export default class GlobalNavi extends Vue {
     }
 
     > a {
-      color: inherit;
       text-decoration: none;
       font-weight: bold;
 
