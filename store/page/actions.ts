@@ -5,11 +5,16 @@ import { RootState } from '~/store/types'
 export default {
   fetchData (
     { commit, state }: ActionContext<PageState, RootState>,
-    page: {title: string; topicPath: string[]}
+    page: {title: string; topicPath: string[], currentGlobalPage: string}
   ): any {
     const topicPath = page.topicPath.map((topic) => {
       return state.pages[topic]
     })
-    commit('setPage', { title: page.title, topicPath: topicPath })
+
+    commit('setPage', {
+      title: page.title,
+      topicPath: topicPath,
+      currentGlobalPage: page.currentGlobalPage
+    })
   }
 }
