@@ -1,10 +1,11 @@
 <template lang="pug">
-  div.sub-header-contents.container
-    div
-      HeadLine1
-        | {{ page.title }}
-      div.topic-path
-        TopicPath(:page="page")
+  section.hero
+    div.hero-body
+      div.container
+        HeadLine1
+          | {{ page.title }}
+        div.topic-path
+          TopicPath(:page="page")
 </template>
 
 <script lang="ts">
@@ -26,8 +27,8 @@ export default class SubHeaderContents extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.sub-header-contents {
-  > div {
+.hero-body {
+  > .container {
     position: relative;
     width: 100%;
     padding: 80px 0;
