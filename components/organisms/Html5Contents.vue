@@ -1,13 +1,13 @@
 <template lang="pug">
   div
-    Description
+    Description#description
       template(slot="title")
         | 説明
       template(slot="body")
         p
           | HTML5とはHTML5とはHTML5とはHTML5とはHTML5とは
-    HtmlReference
-    HtmlLearning
+    HtmlReference#html-reference
+    HtmlLearning#html-learning
 </template>
 
 <script lang="ts">
